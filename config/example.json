@@ -1,0 +1,44 @@
+{
+  "uci_engine": {
+    "engine_path": "sunfish-uci",
+    "timeout_seconds": 30
+  },
+  "board": {
+    "frame_id": "chess_board",
+    "robot_base_frame_id": "robot_base",
+    "a1_center_xyz_m": [0.25, 0.10, 0.0],
+    "square_size_m": 0.05,
+    "surface_height_m": 0.0,
+    "board_rpy_rad": [0.0, 0.0, 0.0]
+  },
+  "robot": {
+    "grasp_height_above_board_m": 0.025,
+    "travel_clearance_above_board_m": 0.12,
+    "tool_rpy_in_board_rad": [3.141592653589793, 0.0, 0.0]
+  },
+  "execution": {
+    "enabled": false,
+    "gz_cli": "gz",
+    "model_name": null,
+    "joint_trajectory_topic": null,
+    "joint_names": [],
+    "gripper_joint_names": [],
+    "gripper_open_positions": [],
+    "gripper_closed_positions": [],
+    "seconds_per_waypoint": 1.0,
+    "gripper_dwell_seconds": 0.5
+  },
+  "kinematics": {
+    "dh_standard": [],
+    "flange_to_tcp_xyz_m": [0.0, 0.0, 0.0],
+    "flange_to_tcp_rpy_rad": [0.0, 0.0, 0.0],
+    "lower_limits_rad": [],
+    "upper_limits_rad": [],
+    "seed_positions_rad": [],
+    "max_iterations": 250,
+    "position_tolerance_m": 0.003,
+    "orientation_tolerance_rad": 0.05,
+    "damping": 0.08,
+    "max_joint_step_rad": 0.12
+  }
+}
